@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sepolia } from "@thirdweb-dev/chains";
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
@@ -8,7 +9,7 @@ import './index.css';
 
 const root = ReactDOM.createRoot (document.getElementById('root'));
 root.render(
-<ThirdwebProvider desiredChainId={ChainId.Sepolia}>
+<ThirdwebProvider activeChainId={ Sepolia }>
     <Router>
     <StateContextProvider>
         <App />
