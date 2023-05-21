@@ -15,6 +15,7 @@ const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
 )
 
 const Sidebar = () => {
+  
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState('dashboard');
 
@@ -42,6 +43,8 @@ const Sidebar = () => {
         </div>
 
         <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} />
+       
+        
       </div>
     </div>
   )
