@@ -32,7 +32,6 @@ const CampaignDetails = () => {
     setIsLoading(true);
 
     await donate(state.pId, amount); 
-
     navigate('/')
     setIsLoading(false);
   }

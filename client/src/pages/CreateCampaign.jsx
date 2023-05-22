@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 
 import { useStateContext } from '../context';
 import { money } from '../assets';
-import { CustomButton, Loader, FormField } from '../components';
+import { CustomButton, FormField, Loader } from '../components';
 import { checkIfImage } from '../utils';
 
 const CreateCampaign = () => {
@@ -46,6 +46,7 @@ const CreateCampaign = () => {
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
       </div>
+
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
@@ -105,14 +106,12 @@ const CreateCampaign = () => {
           <div className="flex justify-center items-center mt-[40px]">
             <CustomButton 
               btnType="submit"
-              title="Submit New Campaign"
+              title="Submit new campaign"
               styles="bg-[#1dc071]"
             />
           </div>
-      </form> 
-
-
-    </div>  
+      </form>
+    </div>
   )
 }
 
